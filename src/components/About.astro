@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+import Avatar_250 from "../cropped_circle_image.png";
+import { SectionTitle } from "./UI";
+---
+
+<section id="about" class="w-full min-h-screen px-6 py-4 pt-14 bg-background">
+    <SectionTitle
+        title="About Me"
+        color="primary"
+        className="h-screen flex flex-col justify-center"
+    >
+        <div class="flex_center flex-col lg:flex-row w-full h-full py-10 gap-8">
+            <Image
+                src={Avatar_250}
+                alt="About_Avatar"
+                class="Fade_Up rounded-full scale-x-[-1] lg:mx-14"
+                width={225}
+                height={225}
+                loading="lazy"
+            />
+
+            <div
+                class="Fade_Up w-full md:w-[80%] lg:w-[60%] flex justify-center items-start flex-col gap-4 lg:border-l border-primary py-8 lg:pl-10"
+            >
+                <h2 class="Fade_Up text-[2.5em] font-bold">Hey there! 👋🏻</h2>
+                <p class="Fade_Up text-justify text-[1.6em]">
+                    I'm Pavlo, a full stack web3 developer with a strong passion
+                    for crafting digital realms that captivate and inspire including Mobile App Development.
+                </p>
+                <p class="Fade_Up text-justify text-[1.6em]">
+                    I specialize in creating dynamic and interactive UI/UX
+                    experience. I stay up to date with the latest tools and
+                    techniques and worked on a wide range of projects, from
+                    personal websites to large-scale applications, sharpening my
+                    problem solving skills and fostering creativity.
+                </p>
+                <p class="Fade_Up text-justify text-[1.6em]">
+                    If you're seeking a dedicated and passionate Engineer,
+                    I'm eager to collaborate with you. Let's bring your ideas to
+                    life!
+                </p>
+            </div>
+        </div>
+
+        <!-- <picture class="flex_center">
+            <source
+                media="(prefers-color-scheme: dark)"
+                srcset="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg/output/github-contribution-grid-snake-dark.svg"
+            />
+            <img
+                alt="github contribution grid snake animation"
+                src="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg/output/github-contribution-grid-snake.svg"
+            />
+        </picture> -->
+    </SectionTitle>
+</section>
